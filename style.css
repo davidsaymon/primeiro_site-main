@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*overflow: Pode esta ocorrendo overflow quando as medidas das telas mudam.*/
+}
+
+
+
+
+/*Cabeçalho*/
+
+header {
+    /*background-color: #e3b44b;*/
+    background-color: rgb(80, 30, 93);
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .container img {
+    width: 100px;
+}
+
+header img {
+    width: 100px;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+header li a{
+    color:#f5f6fa;
+    text-decoration: none;
+}
+
+/*body*/
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(120,54,126), rgb(68,25,72));
+    color: white;
+}
+
+/*Fim body*/
+
+
+
+/*index*/
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grade  {
+    display: flex;
+    align-items: center;
+}
+
+aside img {
+width: 900px;
+
+}
+
+
+
+#ir-forms {
+    background-color: #592366;
+    padding: 30px 30px;
+    margin: 8px;
+    font-size: 18px;
+}
+
+#ir-forms a {
+    background-color: rgb(227, 180, 75);
+    background-image: linear-gradient(to right,rgb(227, 180, 75), rgb(226, 107, 47));
+    color: black;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+#ir-forms a:hover {
+    background-image: linear-gradient(to right,rgb(70, 190, 78), rgb(25, 99, 40));
+}
+
+#action {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#action h4 {
+font-size: 40px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#promo {
+    background-color:#2f639e;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+}
+#promo a {
+    color:#f5f6fa;
+    font-weight: bold;
+}
+
+#promo p {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*seguros e noticias*/
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.articles article img {
+    /*height: 180px;*/
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+
+}
+
+.articles article {
+    margin-bottom: 18px;
+}
+.articles article h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.articles article a {
+    background-color:#e3b44b;
+    color: black;
+    padding: 8px;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+font-family: Arial, Helvetica, sans-serif;
+}
+.articles article h3 {
+    font-size: 24px;
+}
+
+section {
+    padding: 16px 0;
+}
+
+.button-news {
+    border-radius: 10px;
+}
+
+
+
+
+/*Formulário*/
+
+
+.box {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+    width: 25%;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+    border-radius: 10px;
+
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+    width: 92%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+
+
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(0,70,152), rgb(70,19,195));
+}
+
+/*quem somos*/
+
+.quem-somos {
+    display: flex;
+    flex-direction: column;
+    
+}
+.quem-somos {
+    color: #c4bed6;
+    margin-top: 100px;
+    
+}
+
+.quem-somos h2 {
+    color: #b88334;
+    margin: 5px;
+    font-size: 30px;
+
+}
+
+.quem-somos p {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+/*rodapé*/
+
+
+
+footer {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+footer {
+    background-image: linear-gradient(to right, rgb(92, 20, 98), rgb(80, 30, 93));
+    padding: 20px;
+    
+}
+
+footer li img {
+    width: 30px;
+    margin: 10px;
+}
+
+footer section ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.mail {
+    background-image: linear-gradient(to right,rgb(227, 180, 75), rgb(226, 107, 47));
+    border: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-decoration: none;
+    padding: 18px;
+    height: 50px;
+    
+}
+
+.mail:hover {
+    background-image: linear-gradient(to right,rgb(70, 190, 78), rgb(25, 99, 40));
+}
+
+.mail a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
